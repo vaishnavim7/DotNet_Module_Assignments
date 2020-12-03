@@ -111,15 +111,15 @@ namespace Assignmt2_Emp
         public abstract decimal CalcNetSalary();
         #endregion Abstract Method
 
-        #region Show Method
-        public void Show()
-        {
-            Console.WriteLine("Name :"+name);
-            Console.WriteLine("EMP No :" + empNo);
-            Console.WriteLine("Basic Salary :" + basics);
-            Console.WriteLine("Dept No :" + deptNo);
-        }
-        #endregion Show Method
+        //#region Show Method
+        //public void Show()
+        //{
+        //    Console.WriteLine("Name :"+name);
+        //    Console.WriteLine("EMP No :" + empNo);
+        //    Console.WriteLine("Basic Salary :" + basics);
+        //    Console.WriteLine("Dept No :" + deptNo);
+        //}
+        //#endregion Show Method
     }
     #endregion Class Employee
 
@@ -170,6 +170,7 @@ namespace Assignmt2_Emp
             this.basics = bs;
             this.deptNo = dp;
             this.designation = dsgn;
+            empNo = lastEmpNo++;
         }
         #endregion Constructor
 
@@ -177,6 +178,7 @@ namespace Assignmt2_Emp
         public void ShowM()
         {
             Console.WriteLine("Name :" + name);
+            Console.WriteLine("Emp No :" + empNo);
             Console.WriteLine("Designation :" + designation);
             Console.WriteLine("Basic Salary :" + basics);
             Console.WriteLine("Dept No :" + deptNo);
@@ -222,6 +224,7 @@ namespace Assignmt2_Emp
         public void ShowGM()
         {
             Console.WriteLine("Name :" + name);
+            Console.WriteLine("Emp No :" + empNo);
             Console.WriteLine("Designation :" + designation);
             Console.WriteLine("Basic Salary :" + basics);
             Console.WriteLine("Dept No :" + deptNo);
@@ -254,6 +257,7 @@ namespace Assignmt2_Emp
             this.name = nm;
             this.basics = bs;
             this.deptNo = dp;
+            
         }
         #endregion Constructor
 
@@ -261,6 +265,7 @@ namespace Assignmt2_Emp
         public void ShowCEO()
         {
             Console.WriteLine("Name :" + name);
+            Console.WriteLine("Emp No :" + empNo);
             Console.WriteLine("Basic Salary :" + basics);
             Console.WriteLine("Dept No :" + deptNo);
   
