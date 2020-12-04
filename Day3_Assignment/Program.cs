@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -166,11 +166,11 @@ namespace Assignmt2_Emp
         #region Constructor
         public Manager(string nm = null, decimal bs = 0, short dp = 0, string dsgn = null) :base(nm, bs, dp)
         {
-            this.name = nm;
-            this.basics = bs;
-            this.deptNo = dp;
+            //this.name = nm;
+            //this.basics = bs;
+            //this.deptNo = dp;
             this.designation = dsgn;
-            empNo = lastEmpNo++;
+            //empNo = lastEmpNo++;
         }
         #endregion Constructor
 
@@ -212,10 +212,10 @@ namespace Assignmt2_Emp
         #region Constructor
         public GeneralManager(string nm = null, decimal bs = 0, short dp = 0, string dsgn = null, string pr = null) : base(nm, bs, dp, dsgn)
         {
-            this.name = nm;
-            this.basics = bs;
-            this.deptNo = dp;
-            this.designation = dsgn;
+            //this.name = nm;
+            //this.basics = bs;
+            //this.deptNo = dp;
+            //this.designation = dsgn;
             this.perks = pr;
         }
         #endregion Constructor
